@@ -1,0 +1,74 @@
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.067rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+h5 {
+    font-size: 1.6rem;
+}
+
+h6 {
+    font-size: 1.4rem;
+}
+
+p,
+span {
+    line-height: 1.5;
+}
+
+.text-condensed {
+    p,
+    span {
+        line-height: 1.3;
+    }
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+@import url('https://www.fontify.me/wf/53dae06d71df5264fb7f95151d384135');
+.lucemita {
+    font-family: font93887;
+    font-size: 5rem;
+}
+
+@import url('https://www.fontify.me/wf/838ab9520154c6d5a18272090e390f65');
+.summer { // baby-kruffy
+    font-family: font101943;
+}
+
+.f-size-tiny {
+    font-size: 1.2rem
+}
+
+.f-size-small {
+    font-size: 1.8rem
+}
+
+.f-size-title {
+    font-size: 2.7rem;
+}
+
+.f-size-medium {
+    font-size: 3.2rem
+}
+
+.f-size-big {
+    font-size: 4.5rem
+}
+
+.f-size-large {
+    font-size: 5rem
+}

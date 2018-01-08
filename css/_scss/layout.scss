@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    @include display-flex;
+    @include flex-direction(column);
+}
+
+main {
+    @include flex(1 0 auto);
+}
+
+.brand-logo {
+    width: 260px;
+    height: 50px;
+    margin-top: 3px;
+
+    &.mobile {
+        width: 240px;
+        height: auto;
+    }
+}
+
+// HOME
+.background {
+    background-size: cover;
+    background-position: center center;
+    background: color("blue", "darken-4");
+}
+
+.background-mask {
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(color("blue", "darken-4"), 0.50);
+}
+
+// TERMS
+#include-terms {
+    ol {
+        padding: 0 20px;
+    }
+}
