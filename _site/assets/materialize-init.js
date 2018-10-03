@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".slider").slider(),$(".parallax").parallax(),$("select").material_select(),$(".button-collapse").sideNav(),$(".modal").modal({inDuration:300,outDuration:200})});
+$(document).ready(function(){$(".slider").slider(),$(".parallax").parallax(),$("select").formSelect(),$(".sidenav").sidenav(),$(".modal").modal({inDuration:300,outDuration:200})});

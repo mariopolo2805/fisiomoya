@@ -1,36 +1,46 @@
 gems:
-    - jekyll-assets
-    - jekyll-sitemap
+  - jekyll-assets
+  - jekyll-sitemap
 
-exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'css', 'js', 'config.ru', 'vendor']
+exclude:      ['Gemfile', 'Gemfile.lock', 'README.md', 'css', 'js', 'config.ru', 'vendor']
 
 sass:
-  sass_dir: css/_scss
+  sass_dir:   css/_scss
 
 assets:
   compress:
-    css: default
-    js: default
+    css:      default
+    js:       default
+    img:      default
 
-  autowrite: true
+  autowrite:  true
 
   assets:
     - 'main.css'
     - '*.js'
+    - '*.png'
+    - '*.jpg'
 
   sources:
     - css
     - js
+    - images
+    - _posts/images
 
 # ------------------------
 
 # Build settings
-markdown: kramdown
+markdown:     kramdown
 
 # Texts
 
+main:
+  title:      'Fisiomoya'
+  titleTag:   'Fisiomoya'
+
 terms:
-  title: 'Aviso Legal'
+  title:      'Aviso Legal'
+
 cookies:
-  title: Política de cookies
-  titleTag: 'Política de cookies'
+  title:      'Política de cookies'
+  titleTag:   'Política de cookies'

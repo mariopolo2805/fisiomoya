@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
 <!-- This is for Chrome, Firefox OS and Opera -->
-<meta name="theme-color" content="#80c1c7">
+<meta name="theme-color" content="#455a64">
 <!-- This is for Windows Phone -->
-<meta name="msapplication-navbutton-color" content="#80c1c7">
+<meta name="msapplication-navbutton-color" content="#455a64">
 <!-- This is for iOS - Safari -->
-<meta name="apple-mobile-web-app-status-bar-style" content="#80c1c7">
+<meta name="apple-mobile-web-app-status-bar-style" content="#455a64">
 
 <!-- If it's the main page, show only the site title -->
 {% if !page.id == 'home' or !page.id == 'root' %}
-    <title>{{site.main.title}}</title>
-    <!-- If it's other page, show the page title before the site title -->
+  <title>{{site.main.title}}</title>
+<!-- If it's other page, show the page title before the site title -->
 {% else %}
-    <title>{{page.titleTag}} - {{site.main.titleTag}}</title>
+  <title>{{site.main.titleTag}} - {{page.titleTag}}</title>
 {% endif %}
 <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
 <!-- icons -->
@@ -25,8 +25,7 @@
 <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
 <!-- Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-{% css main %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"> {% css main %}
 
 <!-- Cookie Consent -->
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.css"/>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.css" />

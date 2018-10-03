@@ -1,43 +1,52 @@
-html, body {
-    height: 100%;
+@import './_scss/variables';
+
+body,
+html {
+  height: 100%;
 }
 
 body {
-    @include display-flex;
-    @include flex-direction(column);
+  @include display-flex;
+  @include flex-direction(column);
 }
 
 main {
-    @include flex(1 0 auto);
+  @include flex(1 0 auto);
 }
 
 .brand-logo {
-    width: 260px;
-    height: 50px;
+  margin-top: 1px;
+  @media #{$medium-and-up} {
     margin-top: 3px;
+  }
 
-    &.mobile {
-        width: 240px;
-        height: auto;
+  .img {
+    height: 55px;
+    @media #{$medium-and-up} {
+      height: 60px;
     }
-}
-
-// HOME
-.background {
-    background-size: cover;
-    background-position: center center;
-    background: color("blue", "darken-4");
+  }
 }
 
 .background-mask {
-    background-size: cover;
-    background-position: center center;
-    background-color: rgba(color("blue", "darken-4"), 0.50);
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(color("blue-grey", "darken-4"), 0.80);
 }
 
-// TERMS
+.footer {
+  @include display-flex;
+  @include flex-direction(row);
+  @include justify-content(space-between);
+  @include flex(1 0 auto);
+
+  @media #{$large-and-up} {
+    @include justify-content(flex-end);
+  }
+}
+
 #include-terms {
-    ol {
-        padding: 0 20px;
-    }
+  ol {
+    padding: 0 20px;
+  }
 }
