@@ -1,5 +1,6 @@
 @import './_scss/mixins';
 
+// Fles
 .flex {
   @include display-flex;
 }
@@ -28,6 +29,32 @@
   }
 }
 
+// Margin & Padding
 .no-margin {
   margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+// Colors
+.primary {
+  background-color: color-base("primary") !important;
+  &.lighten-1 {
+    background-color: rgba(color-base("primary"), 0.8) !important;
+  }
+  &-text {
+    color: color-base("primary") !important;
+  }
+}
+
+.secondary {
+  background-color: color-base("secondary") !important;
+  &.lighten-1 {
+    background-color: rgba(color-base("secondary"), 0.8) !important;
+  }
+  &-text {
+    color: color-base("secondary") !important;
+  }
 }

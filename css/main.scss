@@ -3,29 +3,32 @@
 @import './_scss/layout';
 @import './_scss/typography';
 
+// BUILGING APP SVG
+// BUILGING APP SVG
+// BUILGING APP SVG
 svg {
   display: block;
   height: 200px;
   width: 200px;
-  margin: 5% auto auto;
+  margin: 0 auto;
 
   .star {
-    fill: #f9e2b7;
+    fill: #fff;
   }
 
   .maincircle {
-    fill: #248077;
+    fill: #40B4E5;
   }
 
   .dashedline {
     fill: none;
-    stroke: #c82754;
+    stroke: #33006F;
     stroke-dasharray: 11.94 11.94;
   }
 
   .inring {
     fill: none;
-    stroke: #f9e2b7;
+    stroke: #fff;
   }
 
   .dashedline,
@@ -36,7 +39,7 @@ svg {
   }
 
   .reddot {
-    fill: #c82754;
+    fill: #33006F;
   }
 
   .hammerhead,
@@ -59,3 +62,6 @@ svg {
     text-align: center;
   }
 }
+// BUILGING APP SVG
+// BUILGING APP SVG
+// BUILGING APP SVG
