@@ -58,3 +58,19 @@
     color: color-base("secondary") !important;
   }
 }
+
+// Icons
+a[href^="mailto:"].icon, a[href^="tel:"].icon {
+  @include display-flex;
+  @include align-items(center);
+}
+a[href^="mailto:"].icon:before {
+  content: url("/images/email.svg");
+  margin-top: 0.3em;
+  margin-right: 0.5em;
+}
+a[href^="tel:"].icon:before {
+  content: url("/images/phone.svg");
+  margin-top: 0.2em;
+  margin-right: 0.5em;
+}

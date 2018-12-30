@@ -4,12 +4,12 @@ var cookieConsent = function() {
       window.cookieconsent.initialise({
         "palette": {
           "popup": {
-            "background": "#263238"
+            "background": "#33006F",
           },
           "button": {
-            "background": "#03a9f4",
+            "background": "#40B4E5",
             "text": "#ffffff"
-          }
+          },
         },
         "content": {
           "message": "Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias. Si continua navegando, consideramos que acepta su uso.",

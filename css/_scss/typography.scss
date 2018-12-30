@@ -1,39 +1,62 @@
 h1 {
   font-size: 4rem;
   font-weight: 800;
+  margin: 1.68rem 0;
 }
 
 h2 {
   font-size: 2.5rem;
   font-weight: 800;
+  margin: 1.424rem 0;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 800;
+  margin: 1.168rem 0;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0.912rem 0;
+}
+
+h5 {
+  font-size: 1.6rem;
+  margin: 0.656rem 0;
 }
 
 p,
 span {
+  font-size: 1.2rem;
   line-height: 1.2;
 }
 
-.f-size-tiny {
+a {
+  color: color("secondary", "base");
+}
+
+.text-tiny {
   font-size: 0.6rem;
 }
 
-.f-size-small {
+.text-small {
   font-size: 1.3rem;
 }
 
-.f-size-medium {
+.text-medium {
   font-size: 1.6rem;
 }
 
-.f-size-big {
+.text-big {
   font-size: 2.3rem;
 }
 
-.f-size-large {
+.text-large {
   font-size: 2.6rem;
+}
+
+.text-bold {
+  font-weight: 600;
 }
