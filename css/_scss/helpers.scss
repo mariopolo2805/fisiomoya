@@ -24,6 +24,10 @@
     @include justify-content(space-between);
   }
 
+  &.space-evenly {
+    @include justify-content(space-evenly);
+  }
+
   &.flex-end {
     @include justify-content(flex-end);
   }
@@ -32,6 +36,14 @@
 // Margin & Padding
 .no-margin {
   margin: 0 !important;
+}
+
+.margin {
+  margin: 12px !important;
+}
+
+.margin-30 {
+  margin: 30px !important;
 }
 
 .no-padding {
