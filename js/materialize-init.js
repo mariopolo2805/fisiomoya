@@ -1,5 +1,9 @@
 $(document).ready(function() {
-  $('.slider').slider();
+  $('.slider').slider({
+    interval: 10000
+  });
+  $('.slider').slider('next');
+  $('.slider').slider('prev');
   $('.parallax').parallax();
   $('select').formSelect();
   $('.sidenav').sidenav();
