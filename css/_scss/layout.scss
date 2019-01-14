@@ -12,6 +12,8 @@ body {
 }
 
 main {
+  @include display-flex;
+  @include flex-direction(column);
   @include flex(1 0 auto);
 }
 
@@ -68,22 +70,28 @@ button {
   height: 100%;
   @include display-flex;
   @include flex-direction(column);
+  @include flex(1 0 auto);
 
-  .slider {
+  .slider-container {
+    @include display-flex;
+    @include flex-direction(column);
     @include flex(1 0 auto);
-    .slides {
-      // height: 90% !important;
-      background-color: white;
-      .caption, p {
-        color: color("secondary", "base") !important;
+    @include justify-content(space-between);
+
+    .slider {
+      .slides {
+        // height: 90% !important;
+        background-color: white;
+        .caption, p {
+          color: color("secondary", "base") !important;
+        }
+      }
+
+      .indicators .indicator-item.active {
+        background-color: color("primary", "base");
       }
     }
-
-    .indicators .indicator-item.active {
-      background-color: color("primary", "base");
-    }
   }
-
 }
 
 .background-mask {
