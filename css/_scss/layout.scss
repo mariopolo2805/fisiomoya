@@ -98,8 +98,8 @@ button {
     @include flex-direction(column);
     @include align-items(center);
     @include transition (transform 0.5s ease);
-    margin: 10px -50px 20px 50px;
     opacity: 0;
+    margin: 10px -50px 20px 50px;
 
     @media #{$extra-large-and-up} {
       @include flex-direction(row);
@@ -133,6 +133,7 @@ button {
 
     &.reverse {
       margin: 10px 50px 20px -50px;
+
       @media #{$extra-large-and-up} {
         @include flex-direction(row-reverse);
       }
