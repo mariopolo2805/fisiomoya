@@ -13,7 +13,7 @@ $(window).on("load",function() {
             $(this).css("transform", "translateX(-50px)");
           }
         }
-      } else {
+      } /* else {
         if ($(this).css("opacity")==1 && !$(this).hasClass("first")) {
           $(this).fadeTo(500,0);
           if ($(this).hasClass("reverse")) {
@@ -27,7 +27,7 @@ $(window).on("load",function() {
             $(this).css("transform", "translateX(50px)");
           }
         }
-      }
+      } */
     });
   }).scroll();
 });
