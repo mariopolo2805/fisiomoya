@@ -28,6 +28,7 @@ button {
 .brand-logo {
   margin-top: 5px;
   overflow: hidden;
+
   @media #{$medium-and-up} {
     margin-top: 8px;
   }
@@ -36,6 +37,7 @@ button {
     height: 55px;
     display: block;
     margin-bottom: -10px;
+
     @media #{$medium-and-up} {
       height: 60px;
     }
@@ -44,6 +46,7 @@ button {
 
 .logo {
   width: 90%;
+
   @media #{$medium-and-up} {
     width: 65%;
   }
@@ -57,39 +60,11 @@ button {
 
 .rates {
   .card {
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.2s ease-in-out;
 
     &:hover {
-      box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
-    }
-  }
-}
-
-.specility {
-  height: 100%;
-  @include display-flex;
-  @include flex-direction(column);
-  @include flex(1 0 auto);
-
-  .slider-container {
-    @include display-flex;
-    @include flex-direction(column);
-    @include flex(1 0 auto);
-    @include justify-content(space-between);
-
-    .slider {
-      .slides {
-        // height: 90% !important;
-        background-color: white;
-        .caption, p {
-          color: color("secondary", "base") !important;
-        }
-      }
-
-      .indicators .indicator-item.active {
-        background-color: color("primary", "base");
-      }
+      box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
     }
   }
 }
@@ -105,6 +80,7 @@ button {
   @include flex-direction(row);
   @include justify-content(space-between);
   @include flex(1 0 auto);
+
   @media #{$large-and-up} {
     @include justify-content(flex-end);
   }
@@ -113,5 +89,53 @@ button {
 #include-terms {
   ol {
     padding: 0 20px;
+  }
+}
+
+.specility {
+  .fade {
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+    @include transition (transform 0.5s ease);
+    margin: 10px -50px 20px 50px;
+    opacity: 0;
+
+    @media #{$extra-large-and-up} {
+      @include flex-direction(row);
+    }
+
+    .image-circle {
+      @include flex(1 0 auto);
+      height: 200px;
+      width: 200px;
+      border-radius: 100px;
+
+      @media #{$medium-and-up} {
+        height: 300px;
+        width: 300px;
+        border-radius: 150px;
+      }
+
+      @media #{$extra-large-and-up} {
+        height: 400px;
+        width: 400px;
+        border-radius: 200px;
+        margin: 20px 0;
+      }
+    }
+
+    .description {
+      @include flex(0 1 auto);
+      margin: 0 30px;
+      text-align: center;
+    }
+
+    &.reverse {
+      margin: 10px 50px 20px -50px;
+      @media #{$extra-large-and-up} {
+        @include flex-direction(row-reverse);
+      }
+    }
   }
 }
