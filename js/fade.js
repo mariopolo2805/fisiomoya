@@ -4,13 +4,15 @@ $(window).on("load",function() {
     $(".fade").each(function() {
       var objectBottom = $(this).offset().top + $(this).outerHeight();
 
-      if (objectBottom < (windowBottom + 100)) {
-        if ($(this).css("opacity")==0) {
+      if (objectBottom < (windowBottom + 200)) {
+        if ($(this).css("opacity") == 0) {
           $(this).fadeTo(500,1);
           if ($(this).hasClass("reverse")) {
-            $(this).css("transform", "translateX(50px)");
+            $(this).css("animation", "animateleft 0.5s");
+            $(this).css("-webkit-animation", "animateleft 0.5s");
           } else {
-            $(this).css("transform", "translateX(-50px)");
+            $(this).css("animation", "animateright 0.5s");
+            $(this).css("-webkit-animation", "animateright 0.5s");
           }
         }
       } /* else {
