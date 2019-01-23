@@ -2,6 +2,12 @@ h1 {
   font-size: 4rem;
   font-weight: 800;
   margin: 1.68rem 0;
+
+  &.header {
+    @media #{$small-and-down} {
+      font-size: 3.5rem;
+    }
+  }
 }
 
 h2 {
