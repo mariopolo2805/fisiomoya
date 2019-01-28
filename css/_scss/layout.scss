@@ -149,12 +149,20 @@ nav .sidenav-trigger {
   @include flex-direction(column);
   @include align-items(flex-start);
   @include justify-content(flex-end);
-  height: 280px;
+  height: 210px;
   padding: 22px;
   background-image: url("logo_empty.png");
   background-position: right -70px bottom -15px;
   background-repeat: no-repeat;
   background-size: contain, cover;
+
+  @media #{$medium-and-up} {
+    height: 240px;
+  }
+
+  @media #{$extra-large-and-up} {
+    height: 270px;
+  }
 
   .border {
     margin: 8px 0;
