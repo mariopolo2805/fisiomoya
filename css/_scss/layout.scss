@@ -143,3 +143,31 @@ nav .sidenav-trigger {
     }
   }
 }
+
+.contact-card {
+  @include display-flex;
+  @include flex-direction(column);
+  @include align-items(flex-start);
+  @include justify-content(flex-end);
+  height: 280px;
+  padding: 22px;
+  background-image: url("logo_empty.png");
+  background-position: right -70px bottom -15px;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+
+  .border {
+    margin: 8px 0;
+    padding: 1px 22px;
+    background: white;
+  }
+
+  .rrss {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  a {
+    color: white;
+  }
+}
