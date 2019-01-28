@@ -48,24 +48,21 @@ permalink: /contacto
   <div class="section container white">
     <div class="row">
       <div class="col s12 m2 l3"></div>
-      <form class="col s12 m8 l6" action="mailto:info@fisioeffect.es" method="post" enctype="text/plain">
+      <form id="contact-form" class="col s12 m8 l6" action="javascript:;">
         <div class="row no-margin--bottom">
           <div class="input-field col s6">
             <label for="name">Nombre</label>
-            <input type="text" class="validate" name="name" required>
-            <span class="helper-text" data-error="Necesitamos saber tu nombre"></span>
+            <input type="text" name="name" required>
           </div>
           <div class="input-field col s6">
             <label for="email">Email</label>
-            <input type="email" class="validate" name="email" required>
-            <span class="helper-text" data-error="Introduce un email válido"></span>
+            <input type="email" name="email" required>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <label for="message">Mensaje</label>
-            <textarea class="materialize-textarea validate" name="message" required>Hola, me gustaría saber más acerca de vosotros</textarea>
-            <span class="helper-text">Puedes preguntarnos por lo que quieras</span>
+            <textarea class="materialize-textarea validate" name="message" required>Hola, me gustaría saber más acerca de vosotros.</textarea>
           </div>
         </div>
         <div class="row right-align">
