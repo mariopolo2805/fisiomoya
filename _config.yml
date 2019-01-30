@@ -20,6 +20,7 @@ assets:
     - '*.js'
     - '*.png'
     - '*.jpg'
+    - '*.svg'
 
   sources:
     - css

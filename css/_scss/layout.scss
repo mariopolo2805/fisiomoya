@@ -11,6 +11,28 @@ body {
   @include flex-direction(column);
 }
 
+.navbar-fixed {
+  a {
+    font-size: 1.4rem;
+  }
+
+  .hide-down-1280 {
+    display: none;
+
+    @media #{$extra-large-and-up} {
+      display: block;
+    }
+  }
+
+  .hide-up-1280 {
+    display: none;
+
+    @media #{$large-and-down} {
+      display: block;
+    }
+  }
+}
+
 main {
   @include display-flex;
   @include flex-direction(column);
@@ -151,7 +173,7 @@ nav .sidenav-trigger {
   @include justify-content(flex-end);
   height: 210px;
   padding: 22px;
-  background-image: url("logo_empty.png");
+  background-image: url("logo_empty.svg");
   background-position: right -70px bottom -15px;
   background-repeat: no-repeat;
   background-size: contain, cover;
