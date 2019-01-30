@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/2019/01/28/welcome.html</loc>
+<loc>/2019/01/28/welcome.html</loc>
 <lastmod>2019-01-28T00:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/blog</loc>
+<loc>/blog</loc>
 </url>
 <url>
-<loc>http://localhost:4000/contacto</loc>
+<loc>/contacto</loc>
 </url>
 <url>
-<loc>http://localhost:4000/cookies/</loc>
+<loc>/cookies/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/faq</loc>
+<loc>/faq</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tarifas</loc>
+<loc>/tarifas</loc>
 </url>
 <url>
-<loc>http://localhost:4000/especialidades/</loc>
+<loc>/especialidades/</loc>
 </url>
 </urlset>
