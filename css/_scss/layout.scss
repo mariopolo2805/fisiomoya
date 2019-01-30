@@ -163,6 +163,10 @@ nav .sidenav-trigger {
         @include flex-direction(row-reverse);
       }
     }
+
+    &.first {
+      opacity: 1 !important;
+    }
   }
 }
 

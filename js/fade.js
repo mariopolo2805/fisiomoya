@@ -4,7 +4,7 @@ $(window).on("load",function() {
     $(".fade").each(function() {
       var objectBottom = $(this).offset().top + $(this).outerHeight();
 
-      if (objectBottom < (windowBottom + 200)) {
+      if (objectBottom < (windowBottom + 600)) {
         if ($(this).css("opacity") == 0) {
           $(this).fadeTo(500,1);
           if ($(this).hasClass("reverse")) {
