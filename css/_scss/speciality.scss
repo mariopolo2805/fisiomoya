@@ -1,0 +1,51 @@
+.specility {
+  .fade {
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+    @include transition (animation 0.5s ease);
+    position: relative;
+    opacity: 0;
+    margin: 10px 0 20px;
+
+    @media #{$extra-large-and-up} {
+      @include flex-direction(row);
+    }
+
+    .image-circle {
+      @include flex(1 0 auto);
+      height: 200px;
+      width: 200px;
+      border-radius: 100px;
+
+      @media #{$medium-and-up} {
+        height: 300px;
+        width: 300px;
+        border-radius: 150px;
+      }
+
+      @media #{$extra-large-and-up} {
+        height: 400px;
+        width: 400px;
+        border-radius: 200px;
+        margin: 20px 0;
+      }
+    }
+
+    .description {
+      @include flex(0 1 auto);
+      margin: 0 30px;
+      text-align: center;
+    }
+
+    &.reverse {
+      @media #{$extra-large-and-up} {
+        @include flex-direction(row-reverse);
+      }
+    }
+
+    &.first {
+      opacity: 1 !important;
+    }
+  }
+}

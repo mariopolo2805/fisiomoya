@@ -82,23 +82,6 @@ nav .sidenav-trigger {
   margin: 0 10px;
 }
 
-.number {
-  min-width: 150px;
-  border-radius: 75px;
-  background: color("primary", "base");
-}
-
-.rates {
-  .card {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.2s ease-in-out;
-
-    &:hover {
-      box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
-    }
-  }
-}
-
 .background-mask {
   background-size: cover;
   background-position: center center;
@@ -119,99 +102,5 @@ nav .sidenav-trigger {
 #include-terms {
   ol {
     padding: 0 20px;
-  }
-}
-
-.specility {
-  .fade {
-    @include display-flex;
-    @include flex-direction(column);
-    @include align-items(center);
-    @include transition (animation 0.5s ease);
-    position: relative;
-    opacity: 0;
-    margin: 10px 0 20px;
-
-    @media #{$extra-large-and-up} {
-      @include flex-direction(row);
-    }
-
-    .image-circle {
-      @include flex(1 0 auto);
-      height: 200px;
-      width: 200px;
-      border-radius: 100px;
-
-      @media #{$medium-and-up} {
-        height: 300px;
-        width: 300px;
-        border-radius: 150px;
-      }
-
-      @media #{$extra-large-and-up} {
-        height: 400px;
-        width: 400px;
-        border-radius: 200px;
-        margin: 20px 0;
-      }
-    }
-
-    .description {
-      @include flex(0 1 auto);
-      margin: 0 30px;
-      text-align: center;
-    }
-
-    &.reverse {
-      @media #{$extra-large-and-up} {
-        @include flex-direction(row-reverse);
-      }
-    }
-
-    &.first {
-      opacity: 1 !important;
-    }
-  }
-}
-
-.contact-card {
-  @include display-flex;
-  @include flex-direction(column);
-  @include align-items(flex-start);
-  @include justify-content(flex-end);
-  height: 210px;
-  padding: 22px;
-  background-image: url("logo_empty.svg");
-  background-position: right -70px bottom -15px;
-  background-repeat: no-repeat;
-  background-size: contain, cover;
-
-  @media #{$medium-and-up} {
-    height: 240px;
-  }
-
-  @media #{$extra-large-and-up} {
-    height: 270px;
-  }
-
-  .border {
-    margin: 8px 0;
-    padding: 1px 22px;
-    background: white;
-  }
-
-  .rrss {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  a {
-    color: white;
-  }
-}
-
-.faq {
-  .collapsible-header {
-    @include align-items(center);
   }
 }

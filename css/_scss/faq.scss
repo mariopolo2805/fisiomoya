@@ -1,0 +1,5 @@
+.faq {
+  .collapsible-header {
+    @include align-items(center);
+  }
+}
