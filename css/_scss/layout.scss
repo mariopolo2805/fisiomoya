@@ -39,6 +39,10 @@ main {
   @include flex(1 0 auto);
 }
 
+#include-terms {
+  padding: 0 10px;
+}
+
 nav ul a {
   padding: 0 12px;
 }
