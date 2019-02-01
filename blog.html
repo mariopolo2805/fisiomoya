@@ -20,6 +20,22 @@ permalink: /blog
 <div class="container">
   <br><br>
   <ul class="row">
+    <!-- {% for post in site.posts %}
+    <li class="col s12 m6 l4">
+      <a class="card small hoverable waves-effect waves-light" href="{{ post.url }}">
+        <div class="card-image">
+          {% if post.thumbail_img %} {% assign postImage = post.thumbail_img %} {% else %} {% assign postImage =
+          post.img %} {% endif %}
+          <img src="{{ postImage | asset_path }}" alt="post_image">
+        </div>
+        <div class="card-content">
+          <span class="card-title grey-text text-darken-4">{{ post.title }}</span>
+        </div>
+      </a>
+    </li>
+    {% endfor %} -->
+
+    <li class="col s12 m3 l4"></li>
     {% for post in site.posts %}
     <li class="col s12 m6 l4">
       <a class="card small hoverable waves-effect waves-light" href="{{ post.url }}">
@@ -41,6 +57,7 @@ permalink: /blog
       </a>
     </li>
     {% endfor %}
+    <li class="col s12 m3 l4"></li>
   </ul>
   <br><br><br><br><br><br>
 </div>
