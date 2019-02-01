@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".parallax").parallax(),$(".sidenav").sidenav(),$(".modal").modal({inDuration:300,outDuration:200})});
+$(document).ready(function(){$(".parallax").parallax(),$(".sidenav").sidenav(),$(".modal").modal({inDuration:300,outDuration:200}),$(".collapsible").collapsible()});

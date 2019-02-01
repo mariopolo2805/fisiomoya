@@ -5,4 +5,5 @@ $(document).ready(function() {
     inDuration: 300, // Transition in duration
     outDuration: 200, // Transition out duration
   });
+  $('.collapsible').collapsible();
 });
