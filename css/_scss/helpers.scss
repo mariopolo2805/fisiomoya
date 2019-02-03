@@ -90,6 +90,16 @@ a[href^="tel:"].icon:before {
   margin-top: 0.2em;
   margin-right: 0.5em;
 }
+.icon.whatsapp {
+  position: relative;
+
+  &:after {
+    content: url("/images/whatsapp.svg");
+    margin-left: 0.3em;
+    position: absolute;
+    top: 0px;
+  }
+}
 
 
 @-webkit-keyframes animateleft {
