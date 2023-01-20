@@ -84,6 +84,10 @@ GEM
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
 
+PLATFORMS
+  x86_64-darwin-19
+  x86_64-linux
+
 DEPENDENCIES
   bundler (= 2.2.13)
   jekyll (= 3.8.6)
