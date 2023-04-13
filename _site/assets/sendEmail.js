@@ -1,1 +1,0 @@
-$(document).ready(function(){$("#contact-form").submit(function(e){var n=encodeURIComponent($("input[name='name']").val()),o=encodeURIComponent($("input[name='email']").val()),t=encodeURIComponent($("textarea[name='message']").val());$(location).attr("href","mailto:info@fisioeffect.es?subject=Info&body="+t+"%0D%0A%0D%0A"+n+"%0D%0A"+o),e.preventDefault()})});
