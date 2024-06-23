@@ -17,7 +17,6 @@ gem 'minima'
 
 gem 'uglifier'
 
-
 gem 'jekyll-sitemap'
 
 gem 'rack-contrib', '1.7.0'
