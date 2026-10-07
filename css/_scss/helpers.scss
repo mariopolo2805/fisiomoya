@@ -1,4 +1,6 @@
-@import 'mixins';
+@use 'mixins' as *;
+@use 'colors' as *;
+
 
 // Fles
 .flex {

@@ -1,4 +1,7 @@
-@import 'variables';
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'colors' as *;
+
 
 body,
 html {
